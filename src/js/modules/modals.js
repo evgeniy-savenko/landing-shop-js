@@ -57,6 +57,7 @@ const modals = () => {
             let display;
 
             document.querySelectorAll('[data-modal]').forEach(item => {
+                item.classList.add('animated', 'fadeIn');
                 if (getComputedStyle(item).display !== 'none') {
                     display = 'block';
                 }
