@@ -4200,7 +4200,6 @@ var checkTextInputs = function checkTextInputs(selector) {
   txtInputs.forEach(function (input) {
     input.addEventListener('keypress', function (e) {
       if (e.key.match(/[^а-яё 0-9]/ig)) {
-        //е.кей значние клавиши которое нажал пользвотель, матч мы имщем соответствие
         e.preventDefault();
       }
     });
