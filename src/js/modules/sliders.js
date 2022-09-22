@@ -33,7 +33,6 @@ const sliders = (slides, dir, prev, next) => {
 
         prevBtn.addEventListener('click', () => {
             changeSlides(-1);
-            items[slideIndex - 1].classList.remove('slideInLeft');
             items[slideIndex - 1].classList.add('slideInRight');
         });
 
@@ -53,8 +52,8 @@ const sliders = (slides, dir, prev, next) => {
         } else {
             paused = setInterval(function() {
                 changeSlides(1);
-                items[slideIndex - 1].classList.remove('slideInLeft');
-                items[slideIndex - 1].classList.add('slideInRight');
+                items[slideIndex - 1].classList.remove('slideInRight');
+                items[slideIndex - 1].classList.add('slideInLeft');
             }, 3000);
         }
     }
