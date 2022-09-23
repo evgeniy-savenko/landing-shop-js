@@ -100,7 +100,7 @@ const modals = () => {
     bindModal('.button-design', '.popup-design', '.popup-design .popup-close');
     bindModal('.button-consultation', '.popup-consultation', '.popup-consultation .popup-close');
     bindModal('.fixed-gift', '.popup-gift', '.popup-gift .popup-close', true);
-    showModalByTime('.popup-consultation', 3000);
+    showModalByTime('.popup-consultation', 60000);
     openByScroll('.fixed-gift');
 
 };
