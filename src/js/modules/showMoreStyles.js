@@ -27,6 +27,7 @@ const showMoreStyles = (trigger, wrapper) => {
             document.querySelector(wrapper).appendChild(card);
         });
     }
+
         
     // cards.forEach(card => { 
     //     card.classList.add('animated', 'fadeInUp');
